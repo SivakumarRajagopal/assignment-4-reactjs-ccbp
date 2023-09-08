@@ -8,7 +8,7 @@ import MatchCard from '../MatchCard'
 
 class TeamMatches extends Component {
   state = {
-    isLoading: false,
+    isLoading: true,
     matchesData: [],
   }
 
@@ -57,7 +57,7 @@ class TeamMatches extends Component {
     }
     console.log(updatedData)
 
-    this.setState({isLoading: true, matchesData: updatedData})
+    this.setState({isLoading: false, matchesData: updatedData})
   }
 
   renderTeamMatches = () => {
