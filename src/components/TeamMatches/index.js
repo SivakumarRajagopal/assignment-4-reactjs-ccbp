@@ -57,7 +57,7 @@ class TeamMatches extends Component {
     }
     console.log(updatedData)
 
-    this.setState({isLoading: false, matchesData: updatedData})
+    this.setState({isLoading: true, matchesData: updatedData})
   }
 
   renderTeamMatches = () => {
